@@ -1,0 +1,16 @@
+{
+    "name": "Blog Origami",
+    "short_name": "Origami",
+    "start_url": "/index.html",
+    "lang": "fr-FR",
+
+    "display": "standalone",
+    "background_color": "#eee",
+
+    "icons": [{
+        "src": "favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+    }]
+
+}

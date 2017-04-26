@@ -1,0 +1,180 @@
+
+/* critical max-width: 250px */
+
+
+@media all and ( max-width: 975px ) /* page */
+{
+    #sidebar
+    {
+        width: 60%;
+        max-width: 60%;
+
+        margin-top: 20px;
+    }
+
+    /* slideshow */
+
+    .slideshow
+    {
+        max-width: 70%;
+    }
+
+    .slideshow .numbertext /* (1/3 etc) */
+    {
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100px;
+    }
+}
+
+@media only screen and ( max-width: 650px ) /* container */
+{
+
+    #rainbow-ribbon,
+    #logo
+    {
+        display: none;
+    }
+    #page
+    {
+        margin: 50px 10px 10px;
+    }
+
+    nav#menu
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        /* responsive */
+
+        height: 0; /*page click issue */
+        overflow: visible;
+    }
+
+    nav#hamburger
+    {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+    }
+
+    nav#nav
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        -webkit-box-align: initial;
+        -ms-flex-align: initial;
+        -ms-grid-row-align: initial;
+        align-items: initial;
+
+        overflow-y: auto;
+
+        width: 0;
+
+        /*height: 100vh; /*viewport height*/
+        height: calc(100vh - 56px); /*nav#nav size, because of overflow*/
+    }
+    nav#nav > a
+    {
+        padding: 16px;
+        font-weight: 400;
+    }
+
+    nav#menu input[type=search]
+    {
+        background-size: 20px;
+        padding: 10px;
+
+        margin-right: 0;
+    }
+    nav#menu input[type=search]:focus
+    {
+        width: 100px;
+    }
+
+    nav#nav form[name=nav-form-search]
+    {
+        display: none;
+    }
+
+    nav#menu > #nav-trigger:checked ~ nav#nav
+    {
+        width: 60%;
+    }
+
+    /* article */
+
+    article header .metadata
+    {
+        display: none;
+    }
+
+    #sidebar
+    {
+        width: 80%;
+        max-width: 80%;
+
+        margin-top: 20px;
+    }
+
+    #pagination
+    {
+        text-align: center;
+
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+
+    /* paper effect */
+
+    .paper::before,
+    .paper::after
+    {
+        display: none;
+    }
+
+    /* news panel > home */
+
+    .news-panel .news-column,
+    .news-panel .news-row
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    /* 404 ghost error */
+
+    .error-404
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+
+    .error-404 .error-ghost
+    {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+
+        margin: 10px;
+    }
+
+}

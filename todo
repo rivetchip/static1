@@ -1,0 +1,15 @@
+
+floor : x = x - (x % 1)
+
+9 mod 4 = 
+
+
+Orange : #ff8800 
+Jaune : #f1da10
+Vert : #94dc23
+Bleu turquoise : #22bbea
+Bleu foncé : #0071b9
+Violet : #5943ff
+Rose : #b243ff
+
+
